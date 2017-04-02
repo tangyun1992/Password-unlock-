@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>H5lock</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            background-color: #ffff;
+            background-image:url(bg.jpg);
+            /*filter: opacity(alpha:0.5);*/
+            /*opacity: 0.5;*/
+            background-size:cover;
+        }
+        .title {
+            color: black;
+            font-size: 16px;
+        }
+        #canvas{
+            background-color: rgba(86,85,83,0);
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 40px;
+        }
+        #updatePassword{
+            margin-top:60px;
+            margin-bottom:15px;
+            display:inline-block;
+        }
+        #update{
+            margin-left:-80px;
+        }
+        #updatePassword a{
+            color:black;
+            font-size:15px;
+            margin-left:15px;
+        }
+        #vertifyPassword{
+           display:inline-block;
+        }
+         #vertify{
+            margin-left:-80px;
+        }
+        #vertifyPassword a{
+            color:black;
+            font-size:15px;
+            margin-left:15px;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="src/H5lock.js"></script>
+<script type="text/javascript">
+new H5lock({
+    chooseType:3
+}).init();
+</script>
+</body>
+</html>
